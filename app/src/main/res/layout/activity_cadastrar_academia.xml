@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#0A0A2A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_logo"
+            android:layout_gravity="center"
+            android:contentDescription="Logo"/>
+
+        <EditText
+            android:id="@+id/etNomeAcademia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00ACC1"
+            android:hint="Nome da Academia"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/etImagemUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00ACC1"
+            android:hint="URL da Imagem"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/etCep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00ACC1"
+            android:hint="CEP"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/etEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00ACC1"
+            android:hint="Estado"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/etCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00ACC1"
+            android:hint="Cidade"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/etRua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00ACC1"
+            android:hint="Rua"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00ACC1"
+            android:hint="Número"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <Button
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/btnCadastrarAcademia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Academia"
+            android:backgroundTint="#00ACC1"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

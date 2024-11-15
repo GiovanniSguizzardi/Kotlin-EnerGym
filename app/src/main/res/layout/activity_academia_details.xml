@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A2A"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvAcademiaNome"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalhes da academia"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/academia_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/academia_image_placeholder"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1C1C2D"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP:"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/tvCep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345-678"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textColor="#00ACC1"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SP"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade:"
+                android:textColor="#00ACC1"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/tvCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="São Paulo"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua:"
+                android:textColor="#00ACC1"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/tvRua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua Exemplo"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número:"
+                android:textColor="#00ACC1"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/tvNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnEditarAcademia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="EDITAR ACADEMIA"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnExcluirAcademia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXCLUIR ACADEMIA"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnIniciarQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INICIAR QR-CODE"
+                android:backgroundTint="#00BCD4"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnEncerrarTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENCERRAR TIMER"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPontosAcumulados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontos Totais: 0"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed" />
+
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A2A"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvAcademiaNome"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Academia"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/academia_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/academia_image_placeholder"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1C1C2D"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:backgroundTint="#202030">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da Academia:"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/etNomeAcademia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4CAF50"
+                android:hint="Nome"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP:"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/etCep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4CAF50"
+                android:hint="CEP"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/etEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4CAF50"
+                android:hint="Estado"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade:"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/etCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4CAF50"
+                android:hint="Cidade"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua:"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/etRua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4CAF50"
+                android:hint="Rua"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número:"
+                android:textColor="#00ACC1"
+                android:layout_marginBottom="4dp"/>
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/etNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

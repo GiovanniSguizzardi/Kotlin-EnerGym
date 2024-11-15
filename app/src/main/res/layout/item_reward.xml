@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#1C1C2D"
+    android:layout_marginBottom="15dp"
+    android:backgroundTint="@color/teal_700">
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Descrição: Voucher 15% Off"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Pontos: 12000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Empresa: UltraGaz"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Tipo: Voucher"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="8dp"
+        android:text="Disponível"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_available"/>
+</LinearLayout>

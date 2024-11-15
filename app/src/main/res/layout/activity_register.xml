@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A2A"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_logo"
+            android:layout_gravity="center"
+            android:contentDescription="Logo"/>
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transforme sua energia em poder sustentável"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome..."
+            android:backgroundTint="#00ACC1"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu email..."
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#00ACC1"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/streetEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua rua..."
+            android:backgroundTint="#00ACC1"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/numberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de sua residência..."
+            android:inputType="number"
+            android:backgroundTint="#00ACC1"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua senha..."
+            android:inputType="textPassword"
+            android:backgroundTint="#00ACC1"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="#00ACC1"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Já possui conta?"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#80FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/loginHereButton"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logue aqui"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
