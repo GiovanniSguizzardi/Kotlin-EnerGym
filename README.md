@@ -38,14 +38,12 @@ Este projeto utiliza as seguintes tecnologias:
 
 ## Funcionalidades
 
-Liste as principais funcionalidades do projeto:
-
-- [ ] Registro e login de usuários
-- [ ] Leitura de QR-Code para iniciar temporizador
-- [ ] Sistema de pontos acumulados
-- [ ] Tela de perfil com dados de usuário e pontos
-- [ ] Persistência de dados no Firebase
-- [ ] **Outras funcionalidades relevantes**
+- Registro e login de usuários
+- Leitura de QR-Code para iniciar temporizador
+- Sistema de pontos acumulados
+- Tela de perfil com dados de usuário e pontos
+- Persistência de dados no Firebase
+- **Outras funcionalidades relevantes**
 
 ## Instalação
 
