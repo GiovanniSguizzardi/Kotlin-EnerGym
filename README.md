@@ -72,13 +72,10 @@ Para facilitar o desenvolvimento e manutenção, as funcionalidades foram organi
 1. **Instale o aplicativo** em um dispositivo Android compatível.
 2. **Registre-se ou faça login** para acessar o sistema. O ID do usuário será armazenado automaticamente para futuras sessões.
 3. **Adicione academias** e visualize seus detalhes.
+5. **Use o QR-Code**: Acesse uma academia e inicie o temporizador de pontos ao escanear o QR-Code.
+6. **Verifique seu perfil** para acompanhar o total de pontos acumulados e o histórico de academias.
 
 ---
 
 ## Diagrama da aplicação
 ![image](https://github.com/user-attachments/assets/aa098972-6dd1-47ba-bff4-03cef432c8e1)
-
-5. **Use o QR-Code**: Acesse uma academia e inicie o temporizador de pontos ao escanear o QR-Code.
-6. **Verifique seu perfil** para acompanhar o total de pontos acumulados e o histórico de academias.
-
----
