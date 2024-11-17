@@ -1,6 +1,6 @@
 # EnerGym - App de Gestão Ecologica de Academias
 
-> [!WARNING]
+> [!Anotation]
 > Vídeo apresentando a aplicação:
 > - [Link do Vídeo](https://www.youtube.com/watch?v=DXueBjSbfgk)
 
