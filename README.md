@@ -1,7 +1,7 @@
 # EnerGym - App de Gestão Ecologica de Academias
 
-> [!Anotation]
-> Vídeo apresentando a aplicação:
+> [!NOTE]
+> Vídeo apresentando a aplicação desenvolvida pela nossa equipe:
 > - [Link do Vídeo](https://www.youtube.com/watch?v=DXueBjSbfgk)
 
 O **EnerGym** é um aplicativo Android desenvolvido para gestão de academias. Ele oferece funcionalidades como registro de academias, gerenciamento de usuários com sistema de pontos acumulativos através de leitura de QR-Code, e sincronização dos dados em tempo real com o Firebase. Este app é ideal para gerenciar academias, mantendo um registro atualizado e detalhado dos clientes e suas atividades.
