@@ -1,6 +1,7 @@
 package br.com.energym.activity
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -36,6 +37,8 @@ class AcademiaDetailsActivity : AppCompatActivity() {
     private lateinit var tvPontosAcumulados: TextView
     private lateinit var btnIniciarQRCode: Button
     private lateinit var btnEncerrarTimer: Button
+    private lateinit var btnEditarAcademia: Button
+    private lateinit var btnExcluirAcademia: Button
     private var pontosAcumulados = 0
     private var timerHandler: Handler? = null
     private var timerRunnable: Runnable? = null
@@ -54,6 +57,9 @@ class AcademiaDetailsActivity : AppCompatActivity() {
         tvPontosAcumulados = findViewById(R.id.tvPontosAcumulados)
         btnIniciarQRCode = findViewById(R.id.btnIniciarQRCode)
         btnEncerrarTimer = findViewById(R.id.btnEncerrarTimer)
+        btnEditarAcademia = findViewById(R.id.btnEditarAcademia)
+        btnExcluirAcademia = findViewById(R.id.btnExcluirAcademia)
+
         btnEncerrarTimer.isEnabled = false
 
         val sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
@@ -76,11 +82,23 @@ class AcademiaDetailsActivity : AppCompatActivity() {
         btnEncerrarTimer.setOnClickListener {
             encerrarTimer()
         }
-    }
 
-    override fun onResume() {
-        super.onResume()
-        carregarDetalhesDaAcademia()
+        btnEditarAcademia.setOnClickListener {
+            val intent = Intent(this, EditarAcademiaActivity::class.java).apply {
+                putExtra("ID", academiaId)
+                putExtra("NOME", tvAcademiaNome.text.toString())
+                putExtra("CEP", tvCep.text.toString())
+                putExtra("ESTADO", tvEstado.text.toString())
+                putExtra("CIDADE", tvCidade.text.toString())
+                putExtra("RUA", tvRua.text.toString())
+                putExtra("NUMERO", tvNumero.text.toString())
+            }
+            startActivity(intent)
+        }
+
+        btnExcluirAcademia.setOnClickListener {
+            excluirAcademia()
+        }
     }
 
     private fun iniciarLeituraQRCode() {
@@ -176,6 +194,32 @@ class AcademiaDetailsActivity : AppCompatActivity() {
         })
     }
 
+    private fun excluirAcademia() {
+        val request = Request.Builder()
+            .url("$BASE_URL/academias/$academiaId.json")
+            .delete()
+            .build()
+
+        client.newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                runOnUiThread {
+                    Toast.makeText(this@AcademiaDetailsActivity, "Erro ao excluir academia", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onResponse(call: Call, response: Response) {
+                runOnUiThread {
+                    if (response.isSuccessful) {
+                        Toast.makeText(this@AcademiaDetailsActivity, "Academia excluída com sucesso", Toast.LENGTH_SHORT).show()
+                        finish()
+                    } else {
+                        Toast.makeText(this@AcademiaDetailsActivity, "Erro ao excluir academia", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+        })
+    }
+
     private fun carregarDetalhesDaAcademia() {
         val request = Request.Builder()
             .url("$BASE_URL/academias/$academiaId.json")
@@ -219,7 +263,6 @@ class AcademiaDetailsActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
                     }
-                    Log.d("AcademiaDetailsActivity", "Erro na resposta ou dados vazios")
                 }
             }
         })
